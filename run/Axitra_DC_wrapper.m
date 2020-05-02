@@ -60,7 +60,7 @@ dip       = 40;          % Vector (ns,1) with the dip of every source
 rake      = 90;          % Vector (ns,1) with the rake of every source
 Slip      = 1;           % Vector (ns,1) with the moment of every source (moment_ver = 2)
 width     = 1000;        % Vector (ns,1) with the width of every rectangular source (moment_ver = 2)
-lth       = 1000;        % Vector (ns,1) with the length of every rectangular source(moment_ver = 2)
+len       = 1000;        % Vector (ns,1) with the length of every rectangular source(moment_ver = 2)
 t0_delay  = 0;           % Vector (ns,1) with the time.delay of every source
 
 source_opt  = 3;     % Source time function option. 
@@ -149,12 +149,12 @@ make_axihist
 %%                   Computing Green's functions
 % -------------------------------------------------------------------------
 
-system('../bin/axitra_moment')
+system('../bin/axitra_moment');
 
 % -------------------------------------------------------------------------
 %%              Convolution of Green's function with STFs
 % -------------------------------------------------------------------------
 
-system('../bin/convms_moment')
+system('../bin/convms_moment');
 
 system('rm axi.data axi.hist axi.res axi.head axi.sou');
