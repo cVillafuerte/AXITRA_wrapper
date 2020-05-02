@@ -87,7 +87,7 @@ if plot_sr
     figure(1001)
     subplot(2,1,1)
     plot(t_sr,srate)
-    xlim([0 1])
+    xlim([0 riseT*10])
     ylabel('Slip rate (m/s)')
     
     subplot(2,1,2)
