@@ -39,7 +39,7 @@ elseif srate_type == 2
     srate = gauss_function(t_sr,riseT,t0);
     
 elseif srate_type == 3
-    srate = gausslike_function(t_sr,riseT);
+    srate = Bouchon_function(t_sr,riseT);
     
 end
   
