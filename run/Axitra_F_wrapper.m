@@ -143,12 +143,12 @@ make_axihist_f
 %%                   Computing Green's functions
 % -------------------------------------------------------------------------
 
-system('../bin/axitra_force')
+system('../bin/axitra_force');
 
 % -------------------------------------------------------------------------
 %%              Convolution of Green's function with STFs
 % -------------------------------------------------------------------------
 
-system('../bin/convms_force')
+system('../bin/convms_force');
 
 system('rm axi.data axi.hist axi.res axi.head axi.sou');
