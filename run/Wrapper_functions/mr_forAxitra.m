@@ -8,7 +8,7 @@ function mr_forAxitra(srate_type,Tl,nfreq,dt_sr,riseT,aw,t0,plot_sr)
 % 
 %srate_type      % (1) Boxcar slip-rate function
                  % (2) Gaussian slip-rate function
-                 % (3) Skew Gaussian slip-rate function
+                 % (3) Bouchon slip-rate function
                        
 % Tl           % Length of the time window used in AXITRA
 % nfreq        % Number of frequencies used in AXITRA
