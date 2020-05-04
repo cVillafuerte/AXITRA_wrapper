@@ -111,6 +111,14 @@ function	fsource (type, t0, omega, t1, dt)
 	if (type.eq.9) then
           fsource=fsource*exp(ai*rand(0)*2*pi)
 	endif
+
+! TYPE 10 Guassian pulse
+        if (type.eq.10) then
+          trise=t0
+          tshift=t1
+          uu = exp(-ai*omega*tshift)*exp(-((omega*trise)**2)/2.)
+          fsource = uu/(ai*omega)
+        endif
     
         return
 end
