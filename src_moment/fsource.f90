@@ -25,7 +25,7 @@ use parameter
 	integer		type
 	real(kind=8)		dt,t0,t1
 	real rand
-	real(kind=8)    :: uur,uui,trise,trupt
+	real(kind=8)    :: uur,uui,trise,trupt,tshift
 	complex(kind=8) :: fsource,uu,uex,uxx,omega,shx
 
 !       write(0,*) type, omega, t0, t1, dt
